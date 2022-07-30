@@ -1,0 +1,32 @@
+{
+    //the order of the "extends" array matters.
+    "extends": [
+      "eslint:recomended",
+      "plugin:import/errors",
+      "plugin:react/recomended",
+      "plugin:jsx-a11y/recomended",
+      "prettier"
+    ],
+    "plugins": ["react", "jsx-a11y", "import"],
+    "rules": {
+      "react/prop-types": 0,
+      "react/react/in-jsx-scope": 0
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
